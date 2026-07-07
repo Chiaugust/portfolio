@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+
+    <title>Develoer Augustine | Full-Stack Developer</title>
+    <meta property="og:title" content="Develoer Augustine | Full-Stack Developer" />
+    <meta property="og:description" content="Portfolio and projects of a passionate Full-Stack Developer." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://replit.com/public/images/opengraph.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@replit" />
+    <meta name="twitter:title" content="Develoer Augustine | Full-Stack Developer" />
+    <meta name="twitter:description" content="Portfolio and projects of a passionate Full-Stack Developer." />
+    <meta name="twitter:image" content="https://replit.com/public/images/opengraph.png" />
+
+    <link rel="icon" type="image/png" href="./favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <!-- Using Tailwind 4 via JS for this "Normal HTML" transition while keeping the build system's variables -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              background: 'hsl(var(--background))',
+              foreground: 'hsl(var(--foreground))',
+              card: 'hsl(var(--card))',
+              'card-foreground': 'hsl(var(--card-foreground))',
+              primary: 'hsl(var(--primary))',
+              'primary-foreground': 'hsl(var(--primary-foreground))',
+              secondary: 'hsl(var(--secondary))',
+              'secondary-foreground': 'hsl(var(--secondary-foreground))',
+              muted: 'hsl(var(--muted))',
+              'muted-foreground': 'hsl(var(--muted-foreground))',
+              accent: 'hsl(var(--accent))',
+              'accent-foreground': 'hsl(var(--accent-foreground))',
+              border: 'hsl(var(--border))',
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              heading: ['Space Grotesk', 'sans-serif'],
+              mono: ['JetBrains Mono', 'monospace'],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Smooth scrolling for anchor links */
+      html { scroll-behavior: smooth; }
+    </style>
+  </head>
+  <body class="font-sans antialiased bg-background text-foreground">
+    <!-- Navigation -->
+    <header class="sticky top-0 z-50 border-b border-white/5 bg-background/40 backdrop-blur-xl">
+      <div class="mx-auto flex w-full max-w-6xl items-center justify-between px-4 py-3 md:px-6">
+        <a href="./index.html" class="group flex items-center gap-2" data-testid="link-home">
+          <span class="grid h-9 w-9 place-items-center rounded-xl bg-white/5 ring-1 ring-white/10 transition-all group-hover:ring-primary/40">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+          </span>
+          <span class="text-sm font-semibold tracking-tight text-white">Develoer Augustine</span>
+        </a>
+
+        <nav class="hidden items-center gap-7 text-sm text-white/70 md:flex">
+          <a href="#about" class="hover:text-white">About</a>
+          <a href="#skills" class="hover:text-white">Skills</a>
+          <a href="#projects" class="hover:text-white">Projects</a>
+          <a href="#contact" class="hover:text-white">Contact</a>
+        </nav>
+
+        <div class="flex items-center gap-2">
+          <!-- <a href="./admin.html" class="hidden md:inline-flex items-center px-4 py-2 rounded-lg border border-white/10 bg-white/5 text-white text-sm hover:bg-white/10 transition-all" data-testid="button-view-admin">Admin</a> -->
+          <a href="#contact" class="inline-flex items-center px-4 py-2 rounded-lg border border-primary/40 bg-primary/15 text-white text-sm hover:bg-primary/20 transition-all" data-testid="button-book-call">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+            Message me
+          </a>
+        </div> 
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="top" class="relative overflow-hidden min-h-[70vh] flex items-center">
+      <div class="absolute inset-0 -z-10 bg-[url('./assets/images/hero-bg.png')] bg-cover bg-center opacity-45"></div>
+      <div class="absolute inset-0 -z-10 bg-gradient-to-b from-background/20 via-background/70 to-background"></div>
+
+      <div class="mx-auto max-w-6xl px-4 py-24 md:px-6">
+        <div class="grid gap-12 md:grid-cols-[1.2fr,0.8fr] md:items-center">
+          <div class="space-y-6">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/80">Remote · GMT+1</span>
+            </div>
+
+            <h1 class="text-balance text-4xl font-semibold leading-[1.05] text-white md:text-6xl font-heading" data-testid="text-hero-title">
+              Websites that bring more paying customers.
+            </h1>
+
+            <p class="max-w-xl text-pretty text-sm leading-relaxed text-white/70 md:text-base" data-testid="text-hero-subtitle">
+              Fast, clean landing pages and funnels that turn visits into action.
+            </p>
+
+            <div class="flex flex-wrap items-center gap-3">
+              <a href="#contact" class="inline-flex items-center px-6 py-3 rounded-xl border border-primary/40 bg-primary/15 text-white hover:bg-primary/20 transition-all" data-testid="button-contact-me">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                Contact me
+              </a>
+              <a href="#projects" class="inline-flex items-center px-6 py-3 rounded-xl border border-white/10 bg-white/5 text-white hover:bg-white/10 transition-all">See sample results</a>
+            </div>
+          </div>
+
+          <div class="bg-card/40 backdrop-blur-md border border-white/5 shadow-2xl rounded-3xl p-8 relative overflow-hidden group">
+            <div class="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-white/5"></div>
+            <div class="relative z-10">
+              <div class="flex items-center justify-between mb-8">
+                <div>
+                  <div class="text-xs uppercase tracking-[0.2em] text-white/60">Now Available</div>
+                  <div class="mt-1 text-lg font-semibold text-white">Project work · Consulting</div>
+                </div>
+                <span class="px-3 py-1 rounded-full border border-primary/30 bg-primary/10 text-primary text-xs font-medium">Open</span>
+              </div>
+              <div class="space-y-4">
+                <div class="flex items-start gap-4 p-4 rounded-2xl bg-white/5 border border-white/5">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary mt-1"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                  <div class="text-sm text-white/80">Performance budgets</div>
+                </div>
+                <div class="flex items-start gap-4 p-4 rounded-2xl bg-white/5 border border-white/5">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary mt-1"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                  <div class="text-sm text-white/80">Security-focused forms</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="mx-auto max-w-6xl px-4 py-16 md:px-6">
+      <div class="max-w-2xl mx-auto text-center">
+        <h2 class="text-2xl font-semibold text-white mb-3">What I do</h2>
+        <p class="text-white/70">I help businesses turn visitors into bookings and sales. I focus on simple tests, clear copy, and fast pages.</p>
+      </div>
+    </section>
+
+    <!-- Services / Skills -->
+    <section id="skills" class="mx-auto max-w-6xl px-4 py-12 md:px-6">
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="glass-card p-6 text-center">
+          <h3 class="font-semibold text-white mb-2">Landing Pages</h3>
+          <p class="text-white/70 text-sm">Pages that speak to your customers and get them to act.</p>
+        </div>
+        <div class="glass-card p-6 text-center">
+          <h3 class="font-semibold text-white mb-2">Booking Funnels</h3>
+          <p class="text-white/70 text-sm">Simple flows that turn interest into booked slots or sales.</p>
+        </div>
+        <div class="glass-card p-6 text-center">
+          <h3 class="font-semibold text-white mb-2">Lead Capture</h3>
+          <p class="text-white/70 text-sm">Forms, follow-ups, and clear next steps so leads don't disappear.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Results / Proof -->
+    <section id="results" class="mx-auto max-w-6xl px-4 py-12 md:px-6">
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="glass-card p-6 text-center">
+          <h4 class="font-semibold text-white">Local business</h4>
+          <p class="text-white/70 text-sm">New landing page that led to more booking requests. Case details available on request.</p>
+        </div>
+        <div class="glass-card p-6 text-center">
+          <h4 class="font-semibold text-white">SaaS trial signup</h4>
+          <p class="text-white/70 text-sm">Improved the signup steps to get more trials to start using the product.</p>
+        </div>
+        <div class="glass-card p-6 text-center">
+          <h4 class="font-semibold text-white">Restaurant</h4>
+          <p class="text-white/70 text-sm">Simple booking flow that made it easier for customers to reserve a table online.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="mx-auto max-w-6xl px-4 py-12 md:px-6">
+      <div class="max-w-xl mx-auto bg-card/40 p-6 rounded-[32px] ring-1 ring-white/10 shadow-shadowGlow">
+        <div class="space-y-4">
+          <div>
+            <h3 class="text-2xl font-semibold text-white">Ready to get it done?</h3>
+            <p class="text-white/70 text-sm mt-2">Choose the fastest way to start.</p>
+          </div>
+          <div class="grid gap-3 sm:grid-cols-2">
+            <a href="https://wa.me/0000000000?text=Hello,%20I%27m%20ready%20to%20start%20a%20project" target="_blank" rel="noreferrer" class="inline-flex items-center justify-center rounded-2xl bg-primary px-5 py-4 text-sm font-semibold text-background shadow-lg shadow-primary/20 transition hover:-translate-y-0.5">WhatsApp — quick chat</a>
+            <a href="mailto:hello@yourbrand.com?subject=Project%20request" class="inline-flex items-center justify-center rounded-2xl border border-white/10 bg-white/5 px-5 py-4 text-sm font-semibold text-white transition hover:bg-white/10">Email — send a brief</a>
+          </div>
+          <p class="text-white/50 text-xs">Most visitors choose WhatsApp for a faster reply; email is ready if you prefer to share details in writing.</p>
+        </div>
+      </div>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects" class="mx-auto max-w-6xl px-4 py-24 md:px-6">
+      <div class="mb-12 max-w-2xl">
+        <div class="flex items-center gap-2 text-xs uppercase tracking-[0.22em] text-white/60">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path></svg>
+          <span>Projects</span>
+        </div>
+        <h2 class="mt-3 text-3xl font-semibold text-white md:text-4xl font-heading">Selected work.</h2>
+      </div>
+
+      <div class="grid gap-8 md:grid-cols-2">
+        <!-- Project 1 -->
+        <div class="group bg-card/40 backdrop-blur-sm border border-white/5 rounded-3xl overflow-hidden hover:border-primary/30 transition-all duration-300">
+          <div class="relative h-64 overflow-hidden">
+            <img src="./assets/images/project-1.png" alt="Project 1" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+            <div class="absolute top-4 left-4">
+              <span class="px-3 py-1 rounded-full border border-primary/30 bg-primary/10 text-primary text-xs">Featured</span>
+            </div>
+          </div>
+          <div class="p-8 space-y-4">
+            <h3 class="text-xl font-semibold text-white">Commerce Command</h3>
+            <p class="text-white/70 text-sm leading-relaxed">Built an admin and checkout tuned to increase completed orders.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-2 py-1 rounded-md border border-white/10 bg-white/5 text-white/60 text-[10px] uppercase tracking-wider">React</span>
+              <span class="px-2 py-1 rounded-md border border-white/10 bg-white/5 text-white/60 text-[10px] uppercase tracking-wider">PHP</span>
+            </div>
+            <div class="pt-4 flex items-center gap-4">
+              <a href="#" class="text-primary text-sm font-medium hover:underline inline-flex items-center">
+                Live Demo
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-1"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 2 -->
+        <div class="group bg-card/40 backdrop-blur-sm border border-white/5 rounded-3xl overflow-hidden hover:border-primary/30 transition-all duration-300">
+          <div class="relative h-64 overflow-hidden">
+            <img src="./assets/images/project-2.png" alt="Project 2" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+            <div class="absolute top-4 left-4">
+              <span class="px-3 py-1 rounded-full border border-primary/30 bg-primary/10 text-primary text-xs">Featured</span>
+            </div>
+          </div>
+          <div class="p-8 space-y-4">
+            <h3 class="text-xl font-semibold text-white">Signal Analytics</h3>
+            <p class="text-white/70 text-sm leading-relaxed">Improved the signup flow to get more trial users to try the product.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-2 py-1 rounded-md border border-white/10 bg-white/5 text-white/60 text-[10px] uppercase tracking-wider">Next.js</span>
+              <span class="px-2 py-1 rounded-md border border-white/10 bg-white/5 text-white/60 text-[10px] uppercase tracking-wider">Charts</span>
+              <span class="px-2 py-1 rounded-md border border-white/10 bg-white/5 text-white/60 text-[10px] uppercase tracking-wider">Auth</span>
+            </div>
+            <div class="pt-4 flex items-center gap-4">
+              <a href="#" class="text-primary text-sm font-medium hover:underline inline-flex items-center">
+                Live Demo
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-1"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="group bg-card/40 backdrop-blur-sm border border-white/5 rounded-3xl overflow-hidden hover:border-primary/30 transition-all duration-300">
+          <div class="relative h-64 overflow-hidden">
+            <img src="./assets/images/project-3.png" alt="Project 3" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+          </div>
+          <div class="p-8 space-y-4">
+            <h3 class="text-xl font-semibold text-white">Pulse Landing</h3>
+            <p class="text-white/70 text-sm leading-relaxed">Launched a landing page that helped turn visitors into paying customers.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-2 py-1 rounded-md border border-white/10 bg-white/5 text-white/60 text-[10px] uppercase tracking-wider">Vite</span>
+              <span class="px-2 py-1 rounded-md border border-white/10 bg-white/5 text-white/60 text-[10px] uppercase tracking-wider">SEO</span>
+              <span class="px-2 py-1 rounded-md border border-white/10 bg-white/5 text-white/60 text-[10px] uppercase tracking-wider">Motion</span>
+            </div>
+            <div class="pt-4 flex items-center gap-4">
+              <a href="#" class="text-primary text-sm font-medium hover:underline inline-flex items-center">
+                Live Demo
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-1"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-white/5 py-12">
+      <div class="mx-auto max-w-6xl px-4 md:px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+        <p class="text-white/50 text-sm">© 2026 Develoer Augustine. All rights reserved.</p>
+        <div class="flex gap-6 text-sm text-white/50">
+          <a href="#" class="hover:text-primary transition-colors">GitHub</a>
+          <a href="#" class="hover:text-primary transition-colors">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
